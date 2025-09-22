@@ -5,11 +5,11 @@ on:
     inputs:
       version:
         description: The version to use to create release notes.
-        required: true
+        default: 0.5.3
         type: string
       type:
         description: Whether the action is for a 'release', 'patch', or 'template'.
-        default: release
+        default: patch
         type: string
 
 jobs:
@@ -17,9 +17,10 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-
     steps:
 
+      - uses: actions/checkout@v5
+        
       # -------------------------------------------
       # Generate release notes for the current release
       # -------------------------------------------

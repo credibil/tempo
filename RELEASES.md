@@ -1,6 +1,6 @@
 ## 0.9.0
 
-Unreleased
+Released 2025-10-02
 
 ### Added
 

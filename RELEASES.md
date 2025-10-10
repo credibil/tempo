@@ -1,6 +1,6 @@
 ## 0.10.1
 
-Unreleased
+Released 2025-10-10
 
 ## Fixed
 
